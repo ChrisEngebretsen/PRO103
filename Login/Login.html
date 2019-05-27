@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
     <title> Login </title>
     <link rel= "stylesheet" type="text/css" href="Login.css">
-</head>
+  </head>
 
 
-<body>
-  <!-- MAIN CONTAINER -->
+  <body>
+    <!-- MAIN CONTAINER -->
+    <div id="main_container">
+      <!-- IMAGES -->
 
-    <!-- IMAGES -->
-    <!-- END IMAGES -->
+      <!-- END IMAGES -->
 
-    <!-- HEADER -->
-      <!-- legg inn logo-->
-    <!-- END HEADER -->
+      <!-- HEADER -->
+      <!-- END HEADER -->
 
 
-    <div id="TASK" src="TASK">
-    </div>
-    <script src="Login.js"></script>
+      <script src="Login.js"></script>
 
-    <div id="login">
-      <label for="username">Username</label>
-      <input type="text" id="username" name="username" placeholder="Your username..">
+      <div id="login">
+        <img id="Task_logo" src="Bilder/TASK.png" alt="Logo">
+
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Your username..">
   
-      <label for="password">Password</label>
-      <input type="text" id="password" name="password" placeholder="Your password..">
+        <label for="password">Password</label>
+        <input type="text" id="password" name="password" placeholder="Your password..">
 
-      <p id="Ok"></p>
-      <p id="notOk"></p>
-
-    <button onclick="myFunction()">Login</button>
-    </div>
-
-</body>
+        <p id="Ok"></p>
+        <p id="notOk"></p>
+        <button onclick="myFunction()">Login</button>
+      </div>
+    </div> 
+    <!-- END MAIN CONTAINER --> 
+  </body>
 
 </html>
