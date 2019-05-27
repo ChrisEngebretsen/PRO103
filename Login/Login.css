@@ -1,34 +1,37 @@
 body {
-background-color: rgb(253, 188, 132);
-background-size: cover;
+    background-color: rgb(253, 188, 132);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+#main_container{
+    height:100%;
+    width:100%;
+    overflow:hidden;
+}
+#Task_logo{
+    height: 180px;
+    bottom:150px;
+    position: relative;
 }
 
 input[type=text], select {
- width: 100%;
- padding: 12px 20px;
- margin: 8px 0;
- display: inline-block;
- border: 1px solid #ccc;
- border-radius: 4px;
- box-sizing: border-box;   
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;   
 }
 
 #login{
-border-width:5px;
-border-style: hidden;
-opacity: 90%;
-width:500px;
-position:fixed;
-z-index: 100;
-left:50%;
-top:50%;
-margin-left:-250px;
-margin-top:-150px;
-};
-#TASK {
-position:fixed;
-width:60px;
-height:40px;
-left:1000px;
-top:10px;
+    height:1000px;
+    width:500px;
+    position:fixed;
+    z-index: 100;
+    left:50%;
+    top:40%;
+    margin-left:-250px;
+    margin-top:-100px;
 };
