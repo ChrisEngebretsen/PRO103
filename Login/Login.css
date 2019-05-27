@@ -1,6 +1,5 @@
 body {
-    background-color: rgb(253, 188, 132);
-    background-size: cover;
+    background-image: linear-gradient(to bottom right,rgb(253, 188, 132),rgb(223, 158, 102),rgb(223, 158, 102),rgb(50,50,50));
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -34,6 +33,8 @@ input[type=text], select {
 }
 
 #login{
-    border: groove;
+    border: inset;
     width:30%;
+    background-color: rgb(253, 188, 132);
+    box-shadow:3px 3px rgb(0,0,0);
 };
