@@ -1,5 +1,5 @@
 body {
-    background-image: url(https://365psd.com/images/previews/e55/5-blurred-backgrounds-image-2012Part-1-Background-5-without-Glare.jpg);
+    background-color: rgb(253,188,132);
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -7,21 +7,19 @@ body {
     align-items: center;
     overflow:hidden;
 }
-#main_container{
+#login_main_container{
     height:75%;
     width:40%;
     border: inset;
+    border-radius: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background-color:rgb(253,188,132);
+    background-color:rgba(253,188,132,0.2);
 }
 #Task_logo{
     height: 175px;
-    justify-content: center;
-    align-content: center;
-    
 }
 
 input[type=text], select {
