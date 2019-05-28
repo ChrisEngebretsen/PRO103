@@ -1,36 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta desription="Login Page"/>
+    <meta author="Christian Engebretsen / Gruppe 6"/>
     <title> Login </title>
-    <link rel= "stylesheet" type="text/css" href="Login.css">
+    <link rel= "stylesheet" type="text/css" href="Login.css"/>
   </head>
 
 
   <body>
     <!-- MAIN CONTAINER -->
-    <div id="main_container">
+    <div id="login_main_container">
       <!-- IMAGES -->
       <img id="Task_logo" src="Bilder/TASK.png" alt="Logo">
       <!-- END IMAGES -->
 
-      <!-- HEADER -->
-      <!-- END HEADER -->
-
-
+      <!-- JS SCRIPT -->
       <script src="Login.js"></script>
+      <!-- END JS SCRIPT -->
 
+      <!-- LOGIN CONTAINER -->
       <div id="login">
         <label for="username">Username</label>
         <input type="text" id="username" name="username" placeholder="Your username..">
   
         <label for="password">Password</label>
         <input type="text" id="password" name="password" placeholder="Your password..">
-        <input id="login_bttn" type="button" value="   Login   " onclick="myFunction()"></input>
+        <input id="login_bttn" type="button" value="     Login    " onclick="myFunction()"></input>
         <p id="Ok"></p>
         <p id="notOk"></p>
 
       </div>
+      <!-- END LOGIN CONTAINER -->
     </div> 
     <!-- END MAIN CONTAINER --> 
   </body>
