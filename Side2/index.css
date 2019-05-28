@@ -1,6 +1,28 @@
-*
-{
-    margin: 0;
+
+body{
+    overflow: hidden;
     padding: 0;
+    margin:0;
 }
 
+#Side2_main{
+    display: flex;
+    flex-direction: row;
+    
+
+
+}
+
+#Side2_leftSide, #Side2_rightSide{
+
+    height: 100vh;
+    width: 100%;    
+}
+
+#Side2_leftSide{
+    background-color:  rgb(253, 188, 132);
+}
+
+#Side2_rightSide{
+    background-color: rgb(244, 65, 184);
+}
