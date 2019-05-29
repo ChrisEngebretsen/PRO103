@@ -54,7 +54,7 @@ body{
     font-size: 25px;
     position: relative;
     font-family: Century Gothic;
-    top: -45px;
+    top: -35px;
     left: 10px;
     white-space: nowrap;
     
@@ -90,6 +90,31 @@ body{
     box-sizing: border-box; 
     font-size: 14px;
 
+}
+
+.form button{
+    font-family: Century Gothic;
+    text-transform: uppercase;
+    outline: 0; 
+    background: #f48942;
+    width: 150%;
+    border: 2px black solid;
+    border-radius: 45px;
+    padding: 10%;
+    color: black; 
+    font-size: 20px; 
+    cursor: pointer; 
+
+
+}
+
+.form button:hover, .form button:active{
+    background: rgb(244, 122, 65);
+}
+
+.Side2_messeage{
+    margin: 15px 0 0; 
+    font-size: 12px;
 }
 
 
