@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta desription="Main Board"/>
+        <meta author="Christian Engebretsen / Gruppe 6"/>
+        <title> Personal Board </title>
+        <link rel= "stylesheet" type="text/css" href="mainpage.css"/>
+    </head>
+
+    <body>
+        <script src="mainpage.js"></script>
+        <div id="to_do_column">
+            <div id="mp_box1" class="mp_box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="mp_box2" class="mp_box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div id="mp_box3" class="mp_box" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+
+        <img id="drag_logo" src="../Login/Bilder/TASK.png" draggable="true" ondragstart="drag(event)">
+
+    </body>
+</html>
