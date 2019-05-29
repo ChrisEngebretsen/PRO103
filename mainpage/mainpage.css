@@ -2,7 +2,7 @@ body{
     background-color: rgb(223, 130, 130);
     height: 100vh;
     width: 100vw;
-    overflow:hidden;
+    margin:0;
 }
 .mp_box{
     width: 350px;
@@ -10,6 +10,8 @@ body{
     padding:10px;
     border: 5px solid rgb(223, 130, 130);
     background-color: black;
+    display: flex;
+    justify-content: center;
 }
 #drag_logo{
     width: 336px;
@@ -18,5 +20,12 @@ body{
 #to_do_column{
     display: flex;
     flex-direction: column;
+}
+#img_container{
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+#mainpage_maincontainer{
     
 }
