@@ -19,7 +19,7 @@ body{
 #container-GetStarted{
   top:-10px;
   height: 65%;
-  width: 40%; 
+    width: 40%; 
   border: 3px solid white;
   border-radius: 5%;
   margin: 100px auto;
@@ -29,6 +29,20 @@ body{
   flex-direction: column;
   align-items: center;
   min-width: 480px;
+  
+
+
+}
+.dottedContainer {
+  width: 100%;
+}
+
+#task_logo{
+  left:410px;
+  width: 160px;
+  position: absolute;
+  top: -65px;
+  left: 20px;
 }
 
 #header1{
@@ -93,6 +107,10 @@ body{
   top: 20px; 
   left: 90%;
   border-radius: 15px;
+
+
+
+
 }
 
 

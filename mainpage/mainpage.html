@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta desription="Main Board"/>
+        <meta author="Christian Engebretsen / Gruppe 6"/>
+        <title> Personal Board </title>
+        <link rel= "stylesheet" type="text/css" href="mainpage.css"/>
+    </head>
+
+    <body>
+        <div id="top_column"></div>
+        <div id="mainpage_maincontainer">
+            <div id="newbox"></div>
+            <button type="button" id="mainpage_button1" onclick="createNewDiv()">Knapp</button>
+            <script src="mainpage.js"></script>
+            <div id="to_do_column"></div>
+            <div id="img_container">
+                <img class="drag_logo" id="drag_logo1" src="../Login/Bilder/TASK.png" draggable="true" ondragstart="drag(event)">
+                <img class="drag_logo" id="drag_logo2" src="../Login/Bilder/TASK.png" draggable="true" ondragstart="drag(event)">
+                <img class="drag_logo" id="drag_logo3" src="../Login/Bilder/TASK.png" draggable="true" ondragstart="drag(event)">
+                <img class="drag_logo" id="drag_logo4" src="../Login/Bilder/TASK.png" draggable="true" ondragstart="drag(event)">
+                <img class="drag_logo" id="drag_logo5" src="../Login/Bilder/TASK.png" draggable="true" ondragstart="drag(event)">
+            </div>
+        </div>
+    </body>
+</html>
