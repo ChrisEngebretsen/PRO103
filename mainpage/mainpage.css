@@ -8,11 +8,12 @@ body{
 .drag_logo{
     width: 336px;
     height:125px;
+    margin: 5px;
 }
 #to_do_column{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-start;
 }
 #img_container{
     display: flex;
@@ -27,11 +28,12 @@ body{
 }
 #newbox1 {
     min-height: 800px;
-    width: 400px;
+    min-width: 350px;
     background-color: aquamarine;
     display:flex;
     flex-direction: column;
     align-items: center;
     align-content: center;
     justify-content: space-evenly;
+    margin-right: 100px;
 }
