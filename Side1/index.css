@@ -1,5 +1,5 @@
 * {
-    border: 2px solid black;
+    /* border: 2px solid black;*/ 
     margin: 0; 
     padding: 0; 
     font-family: Century Gothic;
@@ -15,20 +15,86 @@ body{
 
 }
 
+
 #container-GetStarted{
-  height: 40%;
-    width: 40%; 
-  border: 2px solid #ffffff;
+  top:-10px;
+  height: 65%;
+  width: 40%; 
+  border: 3px solid white;
+  border-radius: 5%;
   margin: 100px auto;
   position: relative;
-   
-
-  
+  text-align: center;
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  min-width: 480px;
 }
 
 #header1{
-    top:  20%;
-    
+    font-size: 35px;
+    margin-top: 15px;
+    font-weight: bolder;  
 
 }
+
+#header2{
+  font-size: 20px;
+  margin-top: 20px; 
+
+}
+
+#dotter{ 
+
+  width: 40px;
+  float: right;
+  margin-right: 20px;
+  
+}
+.dottedContainer {
+  width: 100%;
+}
+
+#task_logo{
+  left:410px;
+  width: 160px;
+  position: absolute;
+  top: -65px;
+  left: 20px;
+}
+
+
+
+#button_getStarted{
+  width: 70%;
+  background-color: rgb(252, 145, 78);
+  border: solid;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 50px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 55px;
+  border-radius: 110px; 
+
+}
+
+#login_getStarted{
+  position: relative;
+  height: 50px;
+  width: 100px;
+  border: solid; 
+  background-color: white; 
+  font-size: 20px;
+  cursor: pointer; 
+  top: 20px; 
+  left: 90%;
+  border-radius: 15px;
+}
+
+
+
 
