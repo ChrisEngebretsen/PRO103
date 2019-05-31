@@ -2,30 +2,36 @@ body{
     background-color: rgb(223, 130, 130);
     height: 100vh;
     width: 100vw;
-    margin:0;
+    margin-left:0;
+    margin-top:0;
 }
-.mp_box{
-    width: 350px;
-    height: 130px;
-    padding:10px;
-    border: 5px solid rgb(223, 130, 130);
-    background-color: black;
-    display: flex;
-    justify-content: center;
-}
-#drag_logo{
+.drag_logo{
     width: 336px;
     height:125px;
 }
 #to_do_column{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 #img_container{
     display: flex;
-    align-content: center;
-    align-items: center;
+    justify-content: space-between;
 }
 #mainpage_maincontainer{
-    
+    height: 100%;
+    border-left: 5px solid green;
+}
+#mainpage_button1{
+    height: 50px;
+}
+#newbox1 {
+    min-height: 800px;
+    width: 400px;
+    background-color: aquamarine;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
 }
