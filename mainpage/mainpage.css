@@ -6,14 +6,14 @@ body{
     margin-top:0;
 }
 .drag_logo{
-    width: 336px;
-    height:125px;
+    width: 100px;
+    height:50px;
     margin: 5px;
 }
 #to_do_column{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: left;
 }
 #img_container{
     display: flex;
@@ -26,14 +26,14 @@ body{
 #mainpage_button1{
     height: 50px;
 }
-#newbox1 {
-    min-height: 800px;
-    min-width: 350px;
+.newboxclass {
+    min-height: 150px;
+    min-width: 800px;
     background-color: aquamarine;
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     align-content: center;
-    justify-content: space-evenly;
-    margin-right: 100px;
+    justify-content: flex-start;
+    margin-top: 100px;
 }
