@@ -12,6 +12,9 @@
     background-color: #cccc;
     font-family: Century Gothic;
     text-align: center; 
+    overflow-x: scroll;
+    overflow: hidden;
+    
      
 }
 
