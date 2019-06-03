@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(223, 130, 130);
+    background-color: beige;
     height: 100vh;
     width: 100vw;
     margin-left:0;
@@ -20,32 +20,66 @@ body{
 }
 #mainpage_button1{
     height: 50px;
+    width:200px;
+}
+#mainpage_button1:hover{
+    box-shadow: 0 1px 1px 0 rgb(0,0,0), 0 1px 1px 0 rgb(0,0,0);
 }
 .newboxclass {
     min-height: 150px;
     min-width: 800px;
-    background-color: aquamarine;
+    background-color: lightgray;
     display:flex;
     flex-direction: row;
     align-items: center;
     align-content: center;
     justify-content: flex-start;
     margin-top: 100px;
+    border: black 1px solid;
 }
 .statusdivclass{
     height: 150px;
     width: 200px;
-    background-color: aquamarine;
+    background-color: lightgray;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    border-right: black 2px solid;
+    border-left: black 2px solid;
 }
 .statusoptionbarclass{
     width: 100px;
     height: 50px;
     margin-top: 50px;
+    margin-right: 80px;
+    margin-left: 80px;
+    border: black 1px solid;
 }
 .taskinputclass{
     margin-left: 25px;
-    margin-right: 800px;
+    margin-right: 600px;
+    border: black 1px solid;
+    height: 50px;
+    text-align: center;
+}
+.dateinputclass{
+    border: black 1px solid;
+    height: 50px;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.prioritydivclass{
+    background-color: lightgray;
+    height: 152px;
+    width: 200px;
+    border-left: black 2px solid;
+    border-right: black 2px solid;
+    display: flex;
+    justify-content: center;
+}
+.priorityselectclass{
+    height: 50px;
+    width: 100px;
+    margin-top: 50px;
 }
