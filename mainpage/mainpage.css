@@ -37,6 +37,20 @@ body{
     margin-top: 100px;
     border: black 1px solid;
 }
+.personlogodiv{
+    height: 150px;
+    width: 200px;
+    background-color: lightgray;
+    border-left: black 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.personselectclass{
+    width: 100px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
 .statusdivclass{
     height: 150px;
     width: 200px;
