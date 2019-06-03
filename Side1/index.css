@@ -33,6 +33,17 @@ body{
 
 
 }
+.dottedContainer {
+  width: 100%;
+}
+
+#task_logo{
+  left:410px;
+  width: 160px;
+  position: absolute;
+  top: -65px;
+  left: 20px;
+}
 
 #header1{
     font-size: 35px;
