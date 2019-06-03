@@ -34,8 +34,8 @@ function createNewDiv(){
     statusoptions.setAttribute("class", "statusoptionbarclass");
 
     var statusoption0 = document.createElement("option");
-    statusoption0.setAttribute("value", "---")
-    var option0 = document.createTextNode("---");
+    statusoption0.setAttribute("value", "   ")
+    var option0 = document.createTextNode("    ");
     statusoption0.appendChild(option0);
     document.getElementById("statusoptionbar" + count).appendChild(statusoption0);
 
@@ -87,8 +87,8 @@ function createNewDiv(){
     priorityselect.setAttribute("class", "priorityselectclass");
 
     var prioritynull = document.createElement("option");
-    prioritynull.setAttribute("value", "---");
-    var priority0 = document.createTextNode("---");
+    prioritynull.setAttribute("value", "    ");
+    var priority0 = document.createTextNode("   ");
     prioritynull.appendChild(priority0);
     document.getElementById("priorityselect" + count).appendChild(prioritynull);
 
