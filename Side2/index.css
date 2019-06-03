@@ -11,8 +11,6 @@ body{
 #Side2_main{
     display: flex;
     flex-direction: row;
-    
-
 }
 
 .Side2_side{
@@ -57,9 +55,6 @@ body{
     top: -35px;
     left: 10px;
     white-space: nowrap;
-    
-    
-
 }
 
 .Side2_loginpage{
@@ -104,8 +99,6 @@ body{
     color: black; 
     font-size: 20px; 
     cursor: pointer; 
-
-
 }
 
 .form button:hover, .form button:active{
