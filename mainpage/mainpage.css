@@ -1,32 +1,52 @@
+html{
+    background-color: white;
+}
 body{
-    background-color: beige;
-    height: 100vh;
-    width: 100vw;
+    background-color: white;
+    height: 100%;
+    width: 100%;
     margin-left:0;
     margin-top:0;
+}
+#headercontainer{
+    width: 100%;
+    height: 200px;
+    border-left: black 1px solid;
+    border-right: black 1px solid;
+    border-bottom: black 1px solid;
+}
+#logocontainer{
+    height:100%;
+    background-color: rgb(253,188,132);
+    display: flex;
+    justify-content: center;
+}
+#tasklogo_mp{
+    height: 70%;
+    margin-top: 30px;
 }
 #to_do_column{
     display: flex;
     flex-direction: column;
     justify-content: left;
-}
-#img_container{
-    display: flex;
-    justify-content: space-between;
+    background-color: white;
+    margin-top: 40px;
 }
 #mainpage_maincontainer{
     height: 100%;
-    border-left: 5px solid green;
+    background-color: white;
 }
 #mainpage_button1{
     height: 50px;
-    width:200px;
+    width: 200px;
+    margin-left: 320px;
+    margin-top: 40px;
 }
 #mainpage_button1:hover{
     box-shadow: 0 1px 1px 0 rgb(0,0,0), 0 1px 1px 0 rgb(0,0,0);
+    cursor: pointer;
 }
 .newboxclass {
-    min-height: 150px;
     min-width: 800px;
     background-color: lightgray;
     display:flex;
@@ -34,11 +54,35 @@ body{
     align-items: center;
     align-content: center;
     justify-content: flex-start;
-    margin-top: 100px;
+    margin-top: 20px;
     border: black 1px solid;
+    margin-left: 300px;
+    margin-right: 25px;
+}
+.stripe{
+    width: 50px;
+    height:100px;
+    background-color: rgb(253,188,132);
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.deletebutton{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    margin-left: -25px;
+}
+.taskinputclass{
+    margin-left: 30px;
+    margin-right: 150px;
+    border: black 1px solid;
+    height: 50px;
+    text-align: left;
 }
 .personlogodiv{
-    height: 150px;
+    height: 100px;
     width: 200px;
     background-color: lightgray;
     border-left: black 2px solid;
@@ -53,7 +97,7 @@ body{
     border: black 1px solid;
 }
 .statusdivclass{
-    height: 150px;
+    height: 100px;
     width: 200px;
     background-color: lightgray;
     display: flex;
@@ -65,28 +109,21 @@ body{
 .statusoptionbarclass{
     width: 150px;
     height: 50px;
-    margin-top: 50px;
+    margin-top: 25px;
     margin-right: 80px;
     margin-left: 80px;
     border: black 1px solid;
 }
-.taskinputclass{
-    margin-left: 25px;
-    margin-right: 600px;
-    border: black 1px solid;
-    height: 50px;
-    text-align: center;
-}
 .dateinputclass{
     border: black 1px solid;
     height: 50px;
-    text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
+    text-align: left;
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .prioritydivclass{
     background-color: lightgray;
-    height: 152px;
+    height: 100px;
     width: 200px;
     border-left: black 2px solid;
     border-right: black 2px solid;
@@ -96,6 +133,103 @@ body{
 .priorityselectclass{
     height: 50px;
     width: 150px;
-    margin-top: 50px;
+    margin-top: 25px;
     border: black 1px solid;
+}
+.commentclass{
+    margin-left: 20px;
+    height: 50px;
+    width:300px;
+    border: black 1px solid;
+}
+
+
+
+
+
+ul{
+    position: absolute;
+    width: 15%;
+    height: 105%;
+    top: 50%;
+    left: 5%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    display: block;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+ul li{
+    list-style: none;
+    text-align: center;
+    display: block;
+    margin: 70px 0px;
+}
+
+ul li a:last-child{
+    border-right: 1px solid rgba(0,0,0,0.2);
+}
+
+ul li a{
+    text-decoration: none;
+    padding: 0 50px;
+    display: block;
+}
+
+ul li a .icon{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    background: #ccc;
+    overflow: hidden;
+    margin: 0 auto 10px;
+}
+
+ul li a .icon .fa{
+    width: 100%;
+    height: 100%;
+    line-height: 40px;
+    font-size: 34px;
+    transition: 0.5s;
+    color: #000;
+}
+
+ul li a:hover .icon .fa:last-child{
+    color: #e91e63;
+}
+
+ul li a:hover .icon .fa{
+    transform: translateY(-100%);
+}
+
+ul li a .name{
+    position: relative;
+    height: 20px;
+    width: 100%;
+    display: block;
+}
+
+ul li a .name span{
+    display: block;
+    position: relative;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+ul li a .name span:before{
+    content: attr(data-text);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #e91e63;
+}
+
+ul li a:hover .name span{
+    transform: translateY(20px);
 }

@@ -4,7 +4,6 @@ count = 0;
 //create new row function, count increases by 1 each time button is pressed
 function createNewDiv(){
     count += 1;
-
     //code to create new row
 
     var div = document.createElement("div");
@@ -12,6 +11,18 @@ function createNewDiv(){
     div.setAttribute("id", "newbox" + count);
     div.setAttribute("class", "newboxclass");
 
+
+    var leftmoststripe = document.createElement("div");
+    document.getElementById("newbox" + count).appendChild(leftmoststripe);
+    leftmoststripe.setAttribute("class", "stripe");
+    leftmoststripe.setAttribute("id", "leftstripe" + count);
+
+    var deletebutton = document.createElement("input");
+    document.getElementById("leftstripe" + count).appendChild(deletebutton);
+    deletebutton.setAttribute("type", "button");
+    deletebutton.setAttribute("value", "X");
+    deletebutton.setAttribute("class", "deletebutton");
+    deletebutton.setAttribute("onclick", "removeBox('newbox" + count + "')");
     //inputfield in each row
 
     var taskinput = document.createElement("input");
@@ -108,11 +119,6 @@ function createNewDiv(){
     statusoption2.appendChild(option2);
     document.getElementById("statusoptionbar" + count).appendChild(statusoption2);
 
-    var statusoption3 = document.createElement("option");
-    statusoption3.setAttribute("value", "Do-today")
-    var option3 = document.createTextNode("Do-today");
-    statusoption3.appendChild(option3);
-    document.getElementById("statusoptionbar" + count).appendChild(statusoption3);
 
     var statusoption4 = document.createElement("option");
     statusoption4.setAttribute("value", "Done");
@@ -155,7 +161,7 @@ function createNewDiv(){
     var priority1 = document.createTextNode("High");
     priorityhigh.appendChild(priority1);
     document.getElementById("priorityselect" + count).appendChild(priorityhigh);
-    document.getElementById("highpriority" + count).style.color = "#ff0000";
+    document.getElementById("highpriority" + count).style.color = "#ff748c";
 
     var prioritymedium = document.createElement("option");
     prioritymedium.setAttribute("value", "Medium");
@@ -163,7 +169,7 @@ function createNewDiv(){
     var priority2 = document.createTextNode("Medium");
     prioritymedium.appendChild(priority2);
     document.getElementById("priorityselect" + count).appendChild(prioritymedium);
-    document.getElementById("mediumpriority" + count).style.color = "#e5e500";
+    document.getElementById("mediumpriority" + count).style.color = "#ffc04c";
 
     var prioritylow = document.createElement("option");
     prioritylow.setAttribute("value", "Low");
@@ -171,6 +177,17 @@ function createNewDiv(){
     var priority3 = document.createTextNode("Low");
     prioritylow.appendChild(priority3);
     document.getElementById("priorityselect" + count).appendChild(prioritylow);
-    document.getElementById("lowpriority" + count).style.color = "#add8e6";
+    document.getElementById("lowpriority" + count).style.color = "#3232ff";
+
+    var dateinput = document.createElement("input");
+    document.getElementById("newbox" + count).appendChild(dateinput);
+    dateinput.setAttribute("class", "commentclass");
+    dateinput.setAttribute("placeholder", "Comments..");
+
 
 }
+
+function removeBox(id){
+    document.getElementById(id).remove();
+}
+
