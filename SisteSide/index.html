@@ -21,7 +21,7 @@
                     
                         <div id="janinit" class="initials hidden"></div>
                             <select id="jan" onchange="ddChange('jan')" name="users">
-                                    <option value="blank"></option>
+                                    <option value=""> Add responsible</option>
                                     <option value="CV">Christain</option>
                                     <option value="RV">Rahil</option>
                                     <option value="MG">Martin</option>
@@ -36,7 +36,7 @@
                     <p>Februar</p>
                     <div id="febinit" class="initials hidden"></div>
                             <select id="feb" onchange="ddChange('feb')" name="users">
-                            <option value="blank"></option>
+                            <option value=""> Add responsible </option>
                             <option value="CV">Christain</option>
                             <option value="RV">Rahil</option>
                             <option value="MG">Martin</option>
@@ -51,7 +51,7 @@
                             
                                     <div id="marinit" class="initials hidden"></div>
                                     <select id="mar" onchange="ddChange('mar')" name="users">
-                                    <option value="blank"></option>
+                                    <option value=""> Add responsible</option>
                                     <option value="CV">Christain</option>
                                     <option value="RV">Rahil</option>
                                     <option value="MG">Martin</option>
@@ -66,7 +66,7 @@
                                 <p>April</p>
                                 <div id="aprinit" class="initals hidden"></div>
                                         <select id="apr" onchange="ddChange('apr')"  name="users">
-                                        <option value="blank"></option>
+                                        <option value=""> Add responsible</option>
                                         <option value="CV">Christain</option>
                                         <option value="RV">Rahil</option>
                                         <option value="MG">Martin</option>
@@ -81,7 +81,7 @@
                                     <p>Mai</p>
                                     <div id="maiinit" class="initials hidden"></div>
                                             <select id="mai" onchange="ddChange('mai')" name="users">
-                                            <option value="blank"></option>
+                                            <option value="">Add responsible</option>
                                             <option value="CV">Christain</option>
                                             <option value="RV">Rahil</option>
                                             <option value="MG">Martin</option>
@@ -96,7 +96,7 @@
                                         <p>Juni</p>
                                         <div id="juninit" class="initials hidden"></div>
                                                 <select id="jun" onchange="ddChange('jun')" name="users">
-                                                <option value="blank"></option>
+                                                <option value=""> Add responsible </option>
                                                 <option value="CV">Christain</option>
                                                 <option value="RV">Rahil</option>
                                                 <option value="MG">Martin</option>
@@ -111,7 +111,7 @@
                                             <p>Juli</p>
                                             <div id="julinit" class="initials hidden"></div>
                                                     <select id="jul" onchange="ddChange('jul')" name="users">
-                                                    <option value="blank"></option>
+                                                    <option value=""> Add responsible </option>
                                                     <option value="CV">Christain</option>
                                                     <option value="RV">Rahil</option>
                                                     <option value="MG">Martin</option>
@@ -126,7 +126,7 @@
                                                 <p>August</p>
                                                 <div id="auginit" class="initals hidden"></div>
                                                         <select id="aug" onchange="ddChange('aug')" name="users">
-                                                        <option value="blank"></option>
+                                                        <option value=""> Add responsible </option>
                                                         <option value="CV">Christain</option>
                                                         <option value="RV">Rahil Vaseer</option>
                                                         <option value="MG">Martin Granheim</option>
@@ -141,7 +141,7 @@
                                                     <p>September</p>
                                                     <div id="sepinit" class="initals hidden"></div>
                                                             <select id="sep" onchange="ddChange('sep')" name="users">
-                                                            <option value="blank"></option>
+                                                            <option value=""> Add responsible </option>
                                                             <option value="CV">Christain</option>
                                                             <option value="RV">Rahil</option>
                                                             <option value="MG">Martin</option>
@@ -156,7 +156,7 @@
                                                         <p>Oktober</p>
                                                         <div id="oktinit" class="initals hidden"></div>
                                                                 <select id="okt" onchange="ddChange('okt')" name="users">
-                                                                <option value="blank"></option>
+                                                                <option value=""> Add responsible </option>
                                                                 <option value="CV">Christain</option>
                                                                 <option value="RV">Rahil</option>
                                                                 <option value="MG">Martin</option>
@@ -171,7 +171,7 @@
                                                             <p>November</p>
                                                             <div id="novinit" class="initials hidden"></div>
                                                                     <select id="nov" onchange="ddChange('nov')" name="users">
-                                                                    <option value="blank"></option>
+                                                                    <option value=""> Add responsible </option>
                                                                     <option value="CV">Christain</option>
                                                                     <option value="RV">Rahil</option>
                                                                     <option value="MG">Martin</option>
@@ -186,7 +186,7 @@
                                                                 <p>Desember</p>
                                                                 <div id="desinit" class="initals hidden"></div>
                                                                         <select id="des" onchange="ddChange('des')" name="users">
-                                                                        <option value="blank"></option>
+                                                                        <option value=""> Add responsible </option>
                                                                         <option value="CV">Christain</option>
                                                                         <option value="RV">Rahil</option>
                                                                         <option value="MG">Martin</option>
@@ -198,11 +198,16 @@
 
         </div>
         
-        <div>
-            <!-- resten-->
+        <div id="SisteSide_Resten">
+           <div id= "SiseSide_Shoppinglist">
+                <h3> Shoppinglist </h3>
+                <input type="button" value="Add item" onclick="addItems()" id= "economy_button">     
+           </div>
+           
+           <canvas id="myChart" width="400" height="400"></canvas><!-- resten-->
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
     <script src="index.js"></script>
 
     
