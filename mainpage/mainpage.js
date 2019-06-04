@@ -15,6 +15,14 @@ function createNewDiv(){
     var leftmoststripe = document.createElement("div");
     document.getElementById("newbox" + count).appendChild(leftmoststripe);
     leftmoststripe.setAttribute("class", "stripe");
+    leftmoststripe.setAttribute("id", "leftstripe" + count);
+
+    var deletebutton = document.createElement("input");
+    document.getElementById("leftstripe" + count).appendChild(deletebutton);
+    deletebutton.setAttribute("type", "button");
+    deletebutton.setAttribute("value", "X");
+    deletebutton.setAttribute("class", "deletebutton");
+    deletebutton.setAttribute("onclick", "removeBox('newbox" + count + "')");
     //inputfield in each row
 
     var taskinput = document.createElement("input");
@@ -178,3 +186,8 @@ function createNewDiv(){
 
 
 }
+
+function removeBox(id){
+    document.getElementById(id).remove();
+}
+
