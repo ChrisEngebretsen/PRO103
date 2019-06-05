@@ -182,7 +182,7 @@ function createNewDiv(){
     var dateinput = document.createElement("input");
     document.getElementById("newbox" + count).appendChild(dateinput);
     dateinput.setAttribute("class", "commentclass");
-    dateinput.setAttribute("placeholder", "Comments..");
+    dateinput.setAttribute("placeholder", "Comment task..");
 
 
 }

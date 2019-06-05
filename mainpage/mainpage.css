@@ -15,6 +15,46 @@ body{
     border-right: black 1px solid;
     border-bottom: black 1px solid;
 }
+#rownamecontainer{
+    margin-left: 400px;
+    display: flex;
+    flex-direction: row;
+}
+#tasknamediv{
+    margin-top: 110px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#taskownerdiv{
+    margin-top: 110px;
+    margin-left: 225px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#taskstatusdiv{
+    margin-top: 110px;
+    margin-left: 90px;
+    font-size: 21px;
+    font-weight: bold;
+}
+#taskduedate{
+    margin-top: 110px;
+    margin-left: 100px;
+    font-size: 21px;
+    font-weight: bold;
+}
+#taskpriority{
+    margin-top: 110px;
+    margin-left: 100px;
+    font-size: 22px;
+    font-weight: bold;
+}
+#taskcomments{
+    margin-top: 110px;
+    margin-left: 150px;
+    font-size: 22px;
+    font-weight: bold;
+}
 #logocontainer{
     height:100%;
     background-color: rgb(253,188,132);
@@ -24,6 +64,22 @@ body{
 #tasklogo_mp{
     height: 70%;
     margin-top: 30px;
+    margin-left: 400px;
+}
+#groupname{
+    height:100px;
+    width:200px;
+    margin-top: 50px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#groupnametext{
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
 #to_do_column{
     display: flex;
@@ -41,6 +97,7 @@ body{
     width: 200px;
     margin-left: 320px;
     margin-top: 40px;
+    font-weight: bold;
 }
 #mainpage_button1:hover{
     box-shadow: 0 1px 1px 0 rgb(0,0,0), 0 1px 1px 0 rgb(0,0,0);
@@ -142,11 +199,6 @@ body{
     width:300px;
     border: black 1px solid;
 }
-
-
-
-
-
 ul{
     position: absolute;
     width: 15%;
@@ -164,7 +216,7 @@ ul li{
     list-style: none;
     text-align: center;
     display: block;
-    margin: 80px 0px;
+    margin: 80px 0;
 }
 
 ul li a:last-child{
