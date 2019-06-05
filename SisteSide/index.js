@@ -61,13 +61,15 @@ function addItems(){
     newDeleteButton.setAttribute("value", "X");
     newDeleteButton.setAttribute("onclick", "removeItem('itemDiv" + counter + "')");
     var newItem = document.createElement("div");
-    document.getElementById("itemDiv" + counter).appendChild(newItem);
     newItem.setAttribute("class", "shoppingItems");
     newItem.setAttribute("id", "shoppingitem" + counter);
     var priceInput = document.createElement("input")
     var nameInput = document.createElement("input")
     nameInput.setAttribute("type", "text");
     priceInput.setAttribute("type", "number");
+    newItem.append(priceInput, nameInput);
+    document.getElementById("itemDiv" + counter).appendChild(newItem);
+
     if(counter > 1) {
         const itemDiv = document.getElementById("shoppingitem" + (counter - 1));
         items.push({name: itemDiv.childNodes[1].value, pris: parseInt(itemDiv.childNodes[0].value)})
@@ -80,7 +82,7 @@ function addItems(){
         });
         myChart.update();
     }
-    newItem.append(priceInput, nameInput);
+
 }
 
 function removeItem(id){

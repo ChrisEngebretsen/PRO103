@@ -196,7 +196,7 @@ ul li a .icon .fa{
 }
 
 ul li a:hover .icon .fa:last-child{
-    color: #e91e63;
+    color: rgb(253,188,132);
 }
 
 ul li a:hover .icon .fa{
@@ -227,7 +227,7 @@ ul li a .name span:before{
     left: 0;
     width: 100%;
     height: 100%;
-    color: #e91e63;
+    color: rgb(253,188,132);
 }
 
 ul li a:hover .name span{
