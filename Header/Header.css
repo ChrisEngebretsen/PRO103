@@ -1,14 +1,8 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 ul{
     position: absolute;
     width: 15%;
-    height: 105%;   
-    top: 50%;
+    height: 100%;
+    top: 75%;
     left: 5%;
     transform: translate(-50%,-50%);
     background: #fff;
@@ -21,7 +15,7 @@ ul li{
     list-style: none;
     text-align: center;
     display: block;
-    margin: 70px 0px;
+    margin: 80px 0px;
 }
 
 ul li a:last-child{
@@ -90,4 +84,3 @@ ul li a .name span:before{
 ul li a:hover .name span{
     transform: translateY(20px);
 }
-
