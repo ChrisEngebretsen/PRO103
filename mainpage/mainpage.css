@@ -59,18 +59,30 @@ body{
     height:100%;
     background-color: rgb(253,188,132);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 #tasklogo_mp{
     height: 70%;
-    margin-top: 30px;
-    margin-left: 400px;
+    margin-top: 27px;
+    margin-right: 240px;
+}
+#returnbuttondiv{
+    height: 50px;
+    width: 140px;
+    margin-top: 120px;
+    margin-right: 50px;
+    text-align: center;
+}
+#returnbutton{
+    border: black 1px solid;
+    border-radius: 20%;
+    background-color: lightgray;
 }
 #groupname{
     height:100px;
     width:200px;
-    margin-top: 50px;
-    margin-left: 200px;
+    margin-top: 75px;
+    margin-left: 15px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -203,7 +215,7 @@ ul{
     position: absolute;
     width: 15%;
     height: 100%;
-    top: 71%;
+    top: 72%;
     left: 5%;
     transform: translate(-50%,-50%);
     background: #fff;

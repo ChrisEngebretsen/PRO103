@@ -66,8 +66,8 @@ function createNewDiv(){
     document.getElementById("personselect" + count).appendChild(personoption2);
 
     var personoption3 = document.createElement("option");
-    personoption3.setAttribute("value", "Mohamed");
-    var person3 = document.createTextNode("Mohamed");
+    personoption3.setAttribute("value", "Mahamed");
+    var person3 = document.createTextNode("Mahamed");
     personoption3.appendChild(person3);
     document.getElementById("personselect" + count).appendChild(personoption3);
 
