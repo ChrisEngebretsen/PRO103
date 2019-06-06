@@ -74,7 +74,7 @@ function Card(list, title) {
 	}
 
 
-	// this function will be called once you click on the text to edit
+	// This function will be called once you click on the text to edit
 	this.node.onclick = (function (card) {
 		return function () {
 			EditCard.card = card

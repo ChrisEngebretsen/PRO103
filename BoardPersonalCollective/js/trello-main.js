@@ -1,7 +1,7 @@
 (function () {
 	'use strict'
 
-	//Board constructor object and assign some properties to its prototype
+	//Board constructor object and assign some properties to its prototype//
 	function Board(title) {
 		var nextId = 0
 		
@@ -18,7 +18,7 @@
 		this.titleNode.id = 'trello-title-board'
 		this.listsNode.id = 'trello-canvas-board'
 
-		// new list title form
+		// New list title form//
 		this.titleFormNode = buildListTitleForm()
 		this.titleNode.appendChild(document.createTextNode(this.title))
 
@@ -28,7 +28,7 @@
 	}
 
 	Board.prototype.render = function () {
-		this.lists.push(new List(this, 'Add a list...', 0, true))
+		this.lists.push(new List(this, 'Add a column...', 0, true))
 		for (var i = 0; i < this.lists.length; ++i) {
 			this.listsNode.appendChild(this.lists[i].node)
 		}
@@ -66,7 +66,7 @@
 
 	EditCard.windowOverlay.onclick = EditCard.close
 
-	//if you click on escape then also the edit window will get closed
+	//Press escape to fastescape the edit box//
 	window.onkeydown = function (evt) {
 		if (evt.keyCode === 27) {
 			EditCard.close()
@@ -74,9 +74,9 @@
 	}
 
 
-	//Onloading the document render the board.The code starts from here
+	//Onloading the document render the board.The code starts from here//
 	document.body.onload = function () {
-		var title = 'Add New Board'
+		var title = ""
 			, board = new Board(title)
 
 		board.render()

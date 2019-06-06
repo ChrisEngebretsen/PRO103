@@ -1,4 +1,4 @@
-//This function will called on adding the list on the board
+//This function will called on adding the list/column on the board//
 function AddingList(board) {
 	return function () {
 		var titleInput = document.getElementById('trello-list-title-input')

@@ -1,3 +1,4 @@
+// Function for the columns and the card //
 function List(board, title, index, stupidTest) {
 	this.board = board
 	this.stupidTest = stupidTest
@@ -12,9 +13,9 @@ function List(board, title, index, stupidTest) {
 	this.titleNode.setAttribute('list-index', index)
 	this.titleNode.appendChild(document.createTextNode(this.title))
 	this.node.appendChild(this.titleNode)
-
+// Setting the cards//
 	if (!stupidTest) {
-		var stupidTest = new Card(this, 'Add a card...', 0)
+		var stupidTest = new Card(this, 'Add a task...', 0)
 
 		this.titleNode.draggable = true
 		this.cards = [stupidTest]
@@ -31,9 +32,9 @@ function List(board, title, index, stupidTest) {
 		stupidTest.node.appendChild(this.titleFormNode)
 		stupidTest.node.draggable = false
 		stupidTest.node.onclick = undefined
-	}
+}
 
-	// drag-drop handlers
+	// Drag-drop handlers
 	this.titleNode.ondragstart = function (evt) {
 		var index = parseInt(evt.target.getAttribute('list-index'), 10)
 		trackDragger.list = currentBoard.lists[index]

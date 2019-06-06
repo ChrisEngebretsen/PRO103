@@ -9,7 +9,7 @@ EditCard.clearInputs = function () {
 	EditCard.titleNode.value = '';
 }
 
-//This will called on the close button
+//This will called on the close button//
 EditCard.close = function() {
 	EditCard.card = undefined
 	EditCard.clearInputs()
@@ -17,13 +17,13 @@ EditCard.close = function() {
 	EditCard.windowOverlay.style.display = 'none'
 }
 
-//This function will show the edited text on the card on submit
+//This function will show the edited text on the card on submit//
 EditCard.show = function () {
 	EditCard.windowOverlay.style.display = 'block'
 	EditCard.node.style.display = 'block'
 }
 
-//This function will submit the edited text
+//This function will submit the edited text//
 EditCard.submit = function (evt) {
 	evt.preventDefault()
 	var title = EditCard.titleNode.value.trim();
