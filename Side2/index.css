@@ -85,7 +85,7 @@ body{
 
 }
 /* Knappen som tar deg videre til login*/
-.form button{
+#button_next{
     font-family: Century Gothic;
     text-transform: uppercase;
     outline: 0; 
