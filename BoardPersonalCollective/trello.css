@@ -1,18 +1,16 @@
 html {
   background-color: white;
 }
-
+/*  Font,lineheight and color for body,button,html,input, select,textarea */
 body, button, html, input, select, textarea {
    color: black;
   font: 20px "Helvetica Neue",Helvetica,sans-serif;
   line-height: 20px;
 }
-
-
+/* New item tile wrapper */
 .newitem-title-wrapper {
   margin: 4px 10px;
 }
-
 #trello-list-title-input {
   width: 100%;
   height: 33px;
@@ -20,7 +18,15 @@ body, button, html, input, select, textarea {
   border: none;
   box-shadow: grey;
 }
-
+/* Return button */
+#returnbutton{
+  border: black 1px solid;
+  border-radius: 20%;
+  background-color: lightgray;
+  width: 34px;
+  height: 34px;
+}
+/* Column */
 .list {
   background: rgb(240, 235, 235);
   border-radius: 3px;
@@ -46,7 +52,7 @@ body, button, html, input, select, textarea {
   max-width: 270px;
   cursor: pointer;
 }
-
+/*Column title*/
 .list-title {
   min-height: 19px;
   padding: 8px 34px 8px 10px;
@@ -54,7 +60,7 @@ body, button, html, input, select, textarea {
   line-height: 18px;
   font-weight: bold;
 }
-
+/* The columns and cards */
 .list-cards {
   -webkit-box-flex: 1;
   -webkit-flex: 1 1 auto;
@@ -65,7 +71,7 @@ body, button, html, input, select, textarea {
   margin: 0 4px;
   padding: 0 4px;
 }
-
+/* The column input */
 .trello-new-card-title-input {
   width: 100%;
   margin-bottom: 4px;
@@ -76,7 +82,7 @@ body, button, html, input, select, textarea {
   border: none;
   box-shadow: none;
 }
-
+/* Card */
 .card {
   background-color: #fff;
   border-bottom: 1px solid #ccc;
@@ -89,11 +95,12 @@ body, button, html, input, select, textarea {
   overflow: auto;
   padding: 6px 8px 4px;
 }
-
+/* Card div */
 .card div {
   margin-bottom: 5px;
 }
 
+/* The task editor */
 #card-edit {
   display: none;
   position: absolute;
@@ -106,21 +113,21 @@ body, button, html, input, select, textarea {
   border-radius: 3px;
   background-color: #ccc;
 }
-
+/* Div for card edit */
 #card-edit div {
   margin-bottom: 10px;
 }
-
+/* Card edit label */
 #card-edit label {
   display: inline-block;
   width: 100px;
   margin-right: 20px;
 }
-
+/* The input of card edits*/
 #card-edit-inputs input {
   width: 300px;
 }
-
+/*Close button for edits*/
 #card-edit-close {
   float: right;
   position: absolute;
@@ -128,12 +135,28 @@ body, button, html, input, select, textarea {
   right: 15px;
   cursor: pointer;
 }
-.navigation-bar img{
-  width: 400px;
+/* Header container */
+#headercontainer{
+  width: 100%;
   height: 200px;
-
+  border-left: black 1px solid;
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
 }
-
+/*Logo container*/
+#logocontainer{
+  height:100%;
+  background-color: rgb(253,188,132);
+  display: flex;
+  justify-content: space-between;
+}
+/* Task logo */
+#tasklogo_mp{
+  height: 70%;
+  margin-top: 27px;
+  margin-right: 240px;
+}
+/* Container for main */
 #container-main {
   display: none;
   position: fixed;
@@ -144,8 +167,8 @@ body, button, html, input, select, textarea {
   background-color: rgba(0, 0, 0, .6);
   z-index: 10;
 }
-
-.navigation-bar{
+/* Header for task logo */
+#navigation-bar{
   background:rgb(253,188,132);
   color: white;
   font-family: "Times New Roman", Georgia, Serif;
@@ -158,25 +181,26 @@ body, button, html, input, select, textarea {
   z-index: 10;
 }
 
+/* The exit button  on edit*/
 #card-edit-close img {
   width: 20px;
   height: 20px;
 }
-
+/* Delete option in edit */
 #card-edit-delete {
   float: left;
   width: 70px;
   background-color: #7B1401;
   color: #fff;
 }
-
+/* Submit option in edit */
 #card-edit-submit {
   float: right;
   width: 70px;
   background-color: #5AA3F2;
   color: #fff;
 }
-
+/* Trello title board */
 #trello-title-board {
   padding: 10px 8px;
   font-size: 18px;
@@ -184,7 +208,7 @@ body, button, html, input, select, textarea {
   color: #4d4d4d;
   font-weight: bold;
 }
-
+/* The canvas board */
 #trello-canvas-board {
   -webkit-box-align: start;
   -webkit-align-items: flex-start;
@@ -203,6 +227,7 @@ body, button, html, input, select, textarea {
   padding-bottom: 1 0px;
   margin-left: 250px;
 }
+/* Ul */
 ul{
   position: absolute;
   width: 15%;
@@ -216,23 +241,24 @@ ul{
   box-shadow: 0 10px 30px rgba(0,0,0,.3);
 }
 
+/* Ul li */
 ul li{
   list-style: none;
   text-align: center;
   display: block;
   margin: 80px 0;
 }
-
+/* Ul li last child */
 ul li a:last-child{
   border-right: 1px solid rgba(0,0,0,0.2);
 }
-
+/* Ul lia a */
 ul li a{
   text-decoration: none;
   padding: 0 50px;
   display: block;
 }
-
+/* Ul lia icon */
 ul li a .icon{
   width: 40px;
   height: 40px;
@@ -241,7 +267,7 @@ ul li a .icon{
   overflow: hidden;
   margin: 0 auto 10px;
 }
-
+/* Ul lia icon */
 ul li a .icon .fa{
   width: 100%;
   height: 100%;
@@ -250,22 +276,22 @@ ul li a .icon .fa{
   transition: 0.5s;
   color: #000;
 }
-
+/* Ul lia hover*/
 ul li a:hover .icon .fa:last-child{
   color: rgb(253,188,132);
 }
-
+/* Ul lia hover and icon */
 ul li a:hover .icon .fa{
   transform: translateY(-100%);
 }
-
+/* Ul lia name */
 ul li a .name{
   position: relative;
   height: 20px;
   width: 100%;
   display: block;
 }
-
+/* Ul lia name */
 ul li a .name span{
   display: block;
   position: relative;
@@ -275,7 +301,7 @@ ul li a .name span{
   transition: 0.5s;
   overflow: hidden;
 }
-
+/* Ul lia name span */
 ul li a .name span:before{
   content: attr(data-text);
   position: absolute;
@@ -285,7 +311,7 @@ ul li a .name span:before{
   height: 100%;
   color: rgb(253,188,132);
 }
-
+/*  Ul lia hover name span */
 ul li a:hover .name span{
   transform: translateY(20px);
 }

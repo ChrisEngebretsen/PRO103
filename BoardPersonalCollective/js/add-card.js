@@ -1,5 +1,5 @@
 /*
- This function will add the Card in the list
+ This function will add the Card in the columns/list
  */
 
 function CardAdding(list) {
