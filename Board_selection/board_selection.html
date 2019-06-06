@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <meta charset="utf-8">
-        <meta description="Board Selection Screen">
-        <meta author="Christian Engebretsen / Gruppe 6">
-        <title> Board Selection </title>
-        <link rel= "stylesheet" type="text/css" href="board_selection.css">
+        <meta description="Create account">
+        <meta author="Martin Granheim / gruppe 6">
+        <title> Board selection </title>
+        <link rel="stylesheet" type="text/css" href="board_selection.css">
     </head>
+    
     <body>
-        <div id="board_selection_p_div">
-            <p id="board_selection_p">Choose your board:</p>
-        </div>
-        <!-- MAIN CONTAINER -->
-        <div id="board_selection_main_container">
-            <div class="board_selection_options">
-                <input type="image"onclick="location.href='../mainpage/mainpage.html';" id="board_selection_community_board"class="board_selection_board_class" src="board_selection_bilder/community_board.PNG" alt="Choose community board">
-            </div>            
-            <div class="board_selection_options">
-                <input type="image" onclick="location.href='../SisteSide/index.html';" id="board_selection_personal_board" class="board_selection_board_class" src="board_selection_bilder/personal_board.PNG" alt="Choose personal board">
+        <!-- Main container -->
+            <div id="board_selection_p_div">
+                <p>Choose your board</p>
             </div>
-        </div>
-        <div id="economy_board_option">
-            <input type="image" onclick="location.href='../SisteSide/index.html';" id="board_selection_economy_board" class="board_selection_board_class" src="board_selection_bilder/economy_board.PNG" alt="Choose economy board">
-        </div>
-        <!-- END MAIN CONTAINER -->
+        <!-- Main container -->
+
+        <!-- Button photo container -->
+        <div id="board_selection_main_container">
+            <div id="main_page_option">
+                <input type="image"onclick="location.href='../mainpage/mainpage.html';" id="Main_page" class="board_selection_board_class" src="board_selection_bilder/Main_page.PNG" alt="Choose community board">
+            </div>            
+            <div id="board_selection_option">
+                <input type="image" onclick="location.href='../boardPersonalCollective';" id="board_selection_personal_board2" class="board_selection_board_class" src="board_selection_bilder/personal_page.PNG" alt="Choose personal board">
+            </div>
+            <div id="economy_board_option">
+                <input type="image" onclick="location.href='../SisteSide/index.html';" id="Economy_page" class="board_selection_board_class" src="board_selection_bilder/Community_expenses_page.PNG" alt="Choose economy board">
+            </div>
+        <!-- End button photo container -->
     </body>
 </html>
