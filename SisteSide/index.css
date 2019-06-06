@@ -59,6 +59,10 @@ body {
     width: 20px;
     margin-left: -50px;
 }
+.form-group{
+    justify-content: center;
+    justify-items: center;
+}
 /*Hvis det er satt "choose responsible" så skal ikke noe vises*/
 .hidden {
     display: none;
