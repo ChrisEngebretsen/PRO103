@@ -47,6 +47,7 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+
 function addItems(){
     counter += 1;
     var itemDiv = document.createElement("div");
