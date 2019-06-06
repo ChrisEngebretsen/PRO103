@@ -51,7 +51,7 @@ var myChart = new Chart(ctx, {
 function addItems(){
     counter += 1;
     var itemDiv = document.createElement("div");
-    document.getElementById("SiseSide_Shoppinglist").appendChild(itemDiv);
+    document.getElementById("lastpage_shoppinglist").appendChild(itemDiv);
     itemDiv.setAttribute("id", "itemDiv" + counter);
     itemDiv.setAttribute("class", "itemDivClass");
 
