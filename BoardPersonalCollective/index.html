@@ -1,65 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" type="text/css" href="   trello.css"/>
-    <title>Personal board</title>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-</head>
-<body> 
-    <!-- HEADER --> 
-<div class="navigation-bar">
-        <div id="headercontainer">
-                <div id="logocontainer">
-                    <div id="groupname">    
+    <head>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" type="text/css" href="   trello.css"/>
+        <title>Personal board</title>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    </head>
+    <body>
+    <!-- HEADER -->
+            <div id="headercontainer">
+                    <div id="logocontainer">
+                        <!-- IMAGES -->
+                        <img id="tasklogo_mp" src="../Login/Bilder/TASK.png">
+                        <!-- END IMAGES -->
+                        <div id="returnbuttondiv">
+                            <input type="image" src="../img/home.png" id="returnbutton" onclick="location.href='../Board_selection/board_selection.html';">
+                        </div>
                     </div>
-                      <!-- IMAGES -->
-                    <img id="tasklogo_mp" src="../Login/Bilder/TASK.png">
-                      <!-- END IMAGES -->
-                    <div id="returnbuttondiv">
-                        <input type="image" src="../img/home.png" id="returnbutton" onclick="location.href='../Board_selection/board_selection.html';">       
- </div>
-    <!-- HEADER END -->
-      <!-- ICONS AND SIDEBAR -->
-<ul>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Messenger">
-                    <i class="fa fa-commenting" aria-hidden="true"></i>
-                    <i class="fa fa-commenting" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Messenger">Messenger</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon">
-                    <i class="fa fa-filter" aria-hidden="true"></i>
-                    <i class="fa fa-filter" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Filter">Filter</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Account">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Account">Account settings</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Help">
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Help">Help</span></div>
-            </a>
-        </li>
-        <li>
+                        <!-- HEADER END -->
+
+                    <!-- ICONS AND SIDEBAR -->
+                        <ul>
+                            <li>
+                                <a href="#">
+                                <div class="icon" data-toggle="modal" data-target="#Messenger">
+                                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                                    <i class="fa fa-commenting" aria-hidden="true"></i>
+                                </div>
+                                <div class="name"><span data-text="Messenger">Messenger</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <i class="fa fa-filter" aria-hidden="true"></i>
+                                    <i class="fa fa-filter" aria-hidden="true"></i>
+                                </div>
+                                <div class="name"><span data-text="Filter">Filter</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon" data-toggle="modal" data-target="#Account">
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                    <i class="fa fa-user" aria-hidden="true"></i>
+                                </div>
+                                <div class="name"><span data-text="Account">Account settings</span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon" data-toggle="modal" data-target="#Help">
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="name"><span data-text="Help">Help</span></div>
+                            </a>
+                        </li>
+                        <li>
             <a href="#">
                 <div class="icon" data-toggle="modal" data-target="#Settings">
                     <i class="fa fa-cog" aria-hidden="true"></i>
@@ -204,19 +203,19 @@
         </div>
     </form>
        <!-- END OF CARD EDIT CLOSE -->
-    
+
 </div>
   <!-- JS SCRIPT -->
-<script type="text/javascript" src="js/card-delete.js"></script>
-<script type="text/javascript" src="js/card-edit.js"></script>
-<script type="text/javascript" src="js/add-card.js"></script>
-<script type="text/javascript" src="js/list-title-form.js"></script>
-<script type="text/javascript" src="js/card-title-form.js"></script>
-<script type="text/javascript" src="js/card.js"></script>
-<script type="text/javascript" src="js/list.js"></script>
-<script type="text/javascript" src="js/add-list.js"></script>
-<script type="text/javascript" src="js/trello-main.js"></script>
+    <script type="text/javascript" src="js/card-delete.js"></script>
+    <script type="text/javascript" src="js/card-edit.js"></script>
+    <script type="text/javascript" src="js/add-card.js"></script>
+    <script type="text/javascript" src="js/list-title-form.js"></script>
+    <script type="text/javascript" src="js/card-title-form.js"></script>
+    <script type="text/javascript" src="js/card.js"></script>
+    <script type="text/javascript" src="js/list.js"></script>
+    <script type="text/javascript" src="js/add-list.js"></script>
+    <script type="text/javascript" src="js/trello-main.js"></script>
   <!-- END JS -->
 
-</body>
+    </body>
 </html>

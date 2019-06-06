@@ -127,8 +127,8 @@ input {
 }
 /*størrelsen og plasseringen til div knappen som viser deg til boardselection ligger*/ 
 #lastpage_returnbuttondiv{
-    height: 200px;
-    width: 150px; 
+    height: 75px;
+    width: 75px;
     position: absolute;
     right: 1px;
 } 
