@@ -1,10 +1,10 @@
-// count variable, counts number of times a row is created
+//Count variable, counts number of times a row is created
 count = 0;
 
-//create new row function, count increases by 1 each time button is pressed
+//Create new row function, count increases by 1 each time button is pressed
 function createNewDiv(){
     count += 1;
-    //code to create new row
+    //Code to create new row
 
     var div = document.createElement("div");
     document.getElementById("to_do_column").appendChild(div);
@@ -23,7 +23,7 @@ function createNewDiv(){
     deletebutton.setAttribute("value", "X");
     deletebutton.setAttribute("class", "deletebutton");
     deletebutton.setAttribute("onclick", "removeBox('newbox" + count + "')");
-    //inputfield in each row
+    //Input field in each row
 
     var taskinput = document.createElement("input");
     document.getElementById("newbox" + count).appendChild(taskinput);
@@ -89,7 +89,7 @@ function createNewDiv(){
     personoption6.appendChild(person6);
     document.getElementById("personselect" + count).appendChild(personoption6);
 
-    //to do, in progress, do today, done options + select bar
+    //To do, in progress, do today, done options + select bar
 
     var statusdiv = document.createElement("div");
     document.getElementById("newbox" + count).appendChild(statusdiv);
@@ -126,18 +126,18 @@ function createNewDiv(){
     statusoption4.appendChild(option4);
     document.getElementById("statusoptionbar" + count).appendChild(statusoption4);
 
-    //to do, in progress, do today, done options + select bar end
+    //To do, in progress, do today, done options + select bar end
 
-    //date input
+    //Date input
 
     var dateinput = document.createElement("input");
     document.getElementById("newbox" + count).appendChild(dateinput);
     dateinput.setAttribute("class", "dateinputclass");
     dateinput.setAttribute("placeholder", "Set due date..");
 
-    //date input end
+    //Date input end
 
-    //priority select
+    //Priority select
 
     var prioritydiv = document.createElement("div");
     document.getElementById("newbox" + count).appendChild(prioritydiv);
@@ -186,7 +186,7 @@ function createNewDiv(){
 
 
 }
-
+//Function to remove tasks
 function removeBox(id){
     document.getElementById(id).remove();
 }
