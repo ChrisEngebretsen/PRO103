@@ -3,7 +3,7 @@ body {
     font-family: Century Gothic;
 }
 
-.SisteSide_Maincontainer{
+.lastpage_maincontainer{
     display: flex;
     flex-direction: row; 
 
@@ -65,7 +65,7 @@ body {
     height: 50px;
     width: 70px;    
 }
-#SiseSide_Shoppinglist{
+#lastpage_shoppinglist{
     display: flex;
     flex-direction: column;
     /*border: 1px black solid;*/
@@ -86,7 +86,7 @@ body {
     margin-bottom: 10px;
     display: flex;
 }
-#SisteSide_Resten{
+#lastpage_therest{
     width: 100%;
 }
 

@@ -10,174 +10,171 @@
         <title>Economy board</title>
     </head>
     <body>
-    <ul>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Messenger">
-                    <i class="fa fa-commenting" aria-hidden="true"></i>
-                    <i class="fa fa-commenting" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Messenger">Messenger</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon">
-                    <i class="fa fa-filter" aria-hidden="true"></i>
-                    <i class="fa fa-filter" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Filter">Filter</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Account">
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Account">Account settings</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Help">
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                    <i class="fa fa-question-circle" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Help">Help</span></div>
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <div class="icon" data-toggle="modal" data-target="#Settings">
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                    <i class="fa fa-cog" aria-hidden="true"></i>
-                </div>
-                <div class="name"><span data-text="Settings">Settings</span></div>
-            </a>
-        </li>
-    </ul>
+        <!-- NAVBAR-->
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="icon" data-toggle="modal" data-target="#Messenger">
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Messenger">Messenger</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon">
+                        <i class="fa fa-filter" aria-hidden="true"></i>
+                        <i class="fa fa-filter" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Filter">Filter</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon" data-toggle="modal" data-target="#Account">
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                        <i class="fa fa-user" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Account">Account settings</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon" data-toggle="modal" data-target="#Help">
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Help">Help</span></div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="icon" data-toggle="modal" data-target="#Settings">
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                        <i class="fa fa-cog" aria-hidden="true"></i>
+                    </div>
+                    <div class="name"><span data-text="Settings">Settings</span></div>
+                </a>
+            </li>
+        </ul>
     </div>
-
-    <div class="modal fade" id="Messenger" tabindex="-1" role="dialog" aria-labelledby="Messenger" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="Messenger_text">New message</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">To (Email):</label>
-                            <input type="text" class="form-control" id="recipient-name">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message_text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Send message</button>
+        <div class="modal fade" id="Messenger" tabindex="-1" role="dialog" aria-labelledby="Messenger" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="Messenger_text">New message</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">To (Email):</label>
+                                <input type="text" class="form-control" id="recipient-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Message:</label>
+                                <textarea class="form-control" id="message_text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="modal fade" id="Account" tabindex="-1" role="dialog" aria-labelledby="Account" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="account_text">Change account settings</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Name:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Phone Number:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                        <div class="form-group">
-                            <label for="message-text" class="col-form-label">Email:</label>
-                            <input type="text" class="form-control">
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Apply</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="modal fade" id="Help" tabindex="-1" role="dialog" aria-labelledby="Help" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="help_text">Help</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <label for="recipient-name" class="col-form-label">Hi, how can we help?</label>
-                            <textarea class="form-control" id="message-text"></textarea>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Submit</button>
+        <div class="modal fade" id="Account" tabindex="-1" role="dialog" aria-labelledby="Account" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="account_text">Change account settings</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Name:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Phone Number:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="message-text" class="col-form-label">Email:</label>
+                                <input type="text" class="form-control">
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Apply</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <div class="modal fade" id="Settings" tabindex="-1" role="dialog" aria-labelledby="Settings" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="settings_text">Settings</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="form-group">
-                            <a id="Logout" href="../Login/Login.html" type="button">Logout</a>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <div class="modal fade" id="Help" tabindex="-1" role="dialog" aria-labelledby="Help" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="help_text">Help</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="recipient-name" class="col-form-label">Hi, how can we help?</label>
+                                <textarea class="form-control" id="message-text"></textarea>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Submit</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="modal fade" id="Settings" tabindex="-1" role="dialog" aria-labelledby="Settings" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="settings_text">Settings</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <a id="Logout" href="../Login/Login.html" type="button">Logout</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+        <!-- END NAVBAR -->
         <div id="headereconomy">
             <img id="tasklogoeconomy" src="../Login/Bilder/TASK.png">
         </div>
-        <div id="SisteSide_main-container" class="SisteSide_Maincontainer">
-            <div id="SisteSide_Resten">
-                <div id= "SiseSide_Shoppinglist">
+        <div id="lastpage_main-container" class="lastpage_maincontainer">
+            <div id="lastpage_therest">
+                <div id= "lastpage_shoppinglist">
                     <h3> Shoppinglist </h3>
                     <input type="button" value="Add item" onclick="addItems()" id= "economy_button">
                 </div>
@@ -347,7 +344,7 @@
                         <option value="MJ">Mohammed</option> 
                     </select>   <!-- circle-->
                 </div>
-            </div>
+            </div> <!-- Scrollbar with who's 'responislbe ends' -->
         </div>
         <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
         <script src="index.js"></script>
