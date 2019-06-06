@@ -1,5 +1,6 @@
 body {
     margin:0;
+    font-family: Century Gothic;
 }
 
 .SisteSide_Maincontainer{
@@ -18,6 +19,9 @@ body {
     text-align: center;
     overflow-y: scroll;
     height:100vh;
+    border-radius: 10px;
+    align-items: center;
+    align-content: center;
 }
 
 ::-webkit-scrollbar {
@@ -25,12 +29,17 @@ body {
 }
 
 .boxes div{
-    border: 1px black solid; 
+    /*border: 1px #cccc solid; */
     padding: 10px; 
     margin: 10px;
     align-content: center;
     text-align: center;
 
+}
+
+.boxes p{
+
+    margin-left: -45px;
 }
 .initials {
     background: white;
@@ -54,12 +63,13 @@ body {
 }
 #economy_button{
     height: 50px;
-    width: 70px;
+    width: 70px;    
 }
 #SiseSide_Shoppinglist{
     display: flex;
     flex-direction: column;
-    border: 1px black solid; 
+    /*border: 1px black solid;*/
+    border-radius: 40px; 
     text-align: center;
     align-items: center;
     width: 30%;
@@ -79,9 +89,7 @@ body {
 #SisteSide_Resten{
     width: 100%;
 }
-#janinit{
-    margin-left: 50px;
-}
+
 input {
     width: 45%;
     margin: 0;
