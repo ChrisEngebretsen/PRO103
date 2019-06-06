@@ -25,18 +25,22 @@ body{
 #side2_rightSide{
     background-color: #90D3F6;
 }
+input{
+    width: 1000px;
+}
 /* størrelse/plassering/bakgrunsfarge på venstre side */
 #side2_wrap{
-
     top: 15%;
     left:6%;
-    width:65%;
+    width:10%;
+    position:absolute;
     align-content: center;
     border: 1px rgb(253, 188, 132) solid;
     text-align: center;
     position: relative;
     padding-left:10px;
-    padding-right: 55px;    
+    padding-right: 55px;
+    font-family: Century Gothic;
 }
 /*størrelse/font på header 1*/
 #side2_header1{
@@ -44,6 +48,7 @@ body{
     font-size: 42px;
     font-family: Century Gothic;
     top: 0px;
+    margin-left: 120px;
 }
 /*størrelse/font på header 2*/
 #side2_header2{
@@ -53,28 +58,33 @@ body{
     top: -35px;
     left: 10px;
     white-space: nowrap;
+    margin-left: 140px;
+    margin-top: 50px;
 }
 /* størrelsen og plassering av containeren registreings 'form' ligger i*/
 .side2_loginpage{
-    width: 360px;
+    width: 400px;
+    height:500px;
     padding: 0 0 0; 
     margin-left: -25px;
     margin-top: -30px;
 }
 /* størrelse og plassering av form-boksene*/
 .form{
-    position: relative;
+    position: absolute;
+    width: 350px;
+    left:70px;
     z-index: 1; 
     background: rgb(253, 188, 132);
-    max-width: 250px;
+    max-width: 3000px;
     margin: 0 auto 100px;
-    padding: 45;
+    padding: 45px;
     text-align: center; 
 }
 /* font/størrelse på skriften i form-boksene*/
 .form input{
-    font-family: "Roboto", sans-serif;
-    outline: 1; 
+    font-family: "Century Gothic";
+    outline: 1px;
     background: #f2f2f2;
     width: 150%;
     border: 0;
@@ -96,7 +106,8 @@ body{
     padding: 10%;
     color: black; 
     font-size: 20px; 
-    cursor: pointer; 
+    cursor: pointer;
+    margin-top:30px;
 }
 /*gir deg en annen variant av oransje farge på videre knappen*/
 .form button:hover, .form button:active{
@@ -104,8 +115,9 @@ body{
 }
 /*størrelsen på "alreadey registred" knappen*/
 .side2_messeage{
-    margin: 15px 0 0; 
-    font-size: 12px;
+    margin: 15px 0 0;
+    font-family: Century Gothic;
+    font-size: 24px;
 }
 
 
