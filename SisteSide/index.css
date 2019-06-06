@@ -118,10 +118,10 @@ input {
 }
 
 #lastpage_returnbuttondiv{
-    height: 200px;
-    width: 150px; 
+    height: 80px;
+    width: 80px;
     position: absolute;
-    right: 1px;
+    right: 80px;
     /*margin-top: 120px;*/
     /*padding-left:1300px;*/
     

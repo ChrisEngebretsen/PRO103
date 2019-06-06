@@ -73,15 +73,13 @@ body{
 #tasklogo_mp{
     height: 70%;
     margin-top: 27px;
-    margin-right: 240px;
+    margin-right: 300px;
 }
 /* Return button container */
 #returnbuttondiv{
     height: 50px;
     width: 140px;
     margin-top: 120px;
-    margin-right: 50px;
-    border: 1px solid black;
 }
 /* Return button */
 #returnbutton{
