@@ -9,6 +9,19 @@
     </head>
     <body>
         <div id="SisteSide_main-container" class="SisteSide_Maincontainer">
+            
+            <div id="SisteSide_Resten">
+                <div id= "SiseSide_Shoppinglist">
+                    <h3> Shoppinglist </h3>
+                    <input type="button" value="Add item" onclick="addItems()" id= "economy_button">
+                </div>
+                <div id="graphdiv">
+                <div id="graph" style="width: 400px; height: 400px;">
+                <canvas id="myChart" width=100" height="100"></canvas><!-- resten-->
+                </div>
+                </div>
+            </div>
+
             <div class="boxes">
                 <!-- scroll bar med flex, direction: column-->
                 <h3>Responsible:</h3>
@@ -155,17 +168,6 @@
                         <option value="KK">Kristine</option>
                         <option value="SS">Stine</option>
                     </select>   <!-- circle-->
-                </div>
-            </div>
-            <div id="SisteSide_Resten">
-                <div id= "SiseSide_Shoppinglist">
-                    <h3> Shoppinglist </h3>
-                    <input type="button" value="Add item" onclick="addItems()" id= "economy_button">
-                </div>
-                <div id="graphdiv">
-                <div id="graph" style="width: 400px; height: 400px;">
-                <canvas id="myChart" width=100" height="100"></canvas><!-- resten-->
-                </div>
                 </div>
             </div>
         </div>
