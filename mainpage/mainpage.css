@@ -81,7 +81,7 @@ body{
     width: 140px;
     margin-top: 120px;
     margin-right: 50px;
-    text-align: center;
+    border: 1px solid black;
 }
 /* Return button */
 #returnbutton{

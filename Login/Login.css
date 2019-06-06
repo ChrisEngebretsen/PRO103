@@ -1,3 +1,4 @@
+/* Body */
 body {
     background-color: rgb(253,188,132);
     height: 100vh;
@@ -7,6 +8,19 @@ body {
     align-items: center;
     overflow:hidden;
 }
+/* Input and select styling */
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+}
+/* Login main container
+--------------------*/
 #login_main_container{
     height:75%;
     width:40%;
@@ -18,26 +32,17 @@ body {
     flex-direction: column;
     background-color:rgba(253,188,132,0.2);
 }
+/* Logo */
 #Task_logo{
     height: 175px;
 }
-
-input[type=text], select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: flex;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
+/* Login container */
 #login{
     height:40%;
     width:40%;
     text-align: center;
 }
+/* Login button */
 #login_bttn{
     text-align: center;
     font-size: 20px;
@@ -45,10 +50,11 @@ input[type=text], select {
     transition-duration: 0.4s;
     border-radius: 5%;
 }
-
+/* Login button styling */
 #login_bttn:hover{
     box-shadow: 0 1px 1px 0 rgb(0,0,0), 0 2px 5px 0 rgb(0,0,0);
 }
+/* text from JS variable */
 #Ok{
     margin-top: 30px;
 }
