@@ -15,7 +15,7 @@ body {
     border: 1px #ccc solid; 
     background-color: #cccc;
     font-family: Century Gothic;
-    text-align: center; 
+    text-align: center;
     overflow-y: scroll;
     height:100vh;
 }
@@ -42,6 +42,7 @@ body {
     justify-content: center;
     font-size: 30px;
     color: rgb(252, 145, 78);
+    margin-left: 50px;
 }
 .deletebuttonclass{
     height: 20px;
@@ -77,6 +78,9 @@ body {
 }
 #SisteSide_Resten{
     width: 100%;
+}
+#janinit{
+    margin-left: 50px;
 }
 input {
     width: 45%;
