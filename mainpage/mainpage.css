@@ -1,3 +1,4 @@
+/* html + body styling*/
 html{
     background-color: white;
 }
@@ -8,6 +9,11 @@ body{
     margin-left:0;
     margin-top:0;
 }
+
+/* Header styling and positioning
+---------------------------------*/
+
+/* Container */
 #headercontainer{
     width: 100%;
     height: 200px;
@@ -15,6 +21,7 @@ body{
     border-right: black 1px solid;
     border-bottom: black 1px solid;
 }
+/* Row names container */
 #rownamecontainer{
     margin-left: 400px;
     display: flex;
@@ -55,17 +62,20 @@ body{
     font-size: 22px;
     font-weight: bold;
 }
+/* Logo container */
 #logocontainer{
     height:100%;
     background-color: rgb(253,188,132);
     display: flex;
     justify-content: space-between;
 }
+/* Logo */
 #tasklogo_mp{
     height: 70%;
     margin-top: 27px;
     margin-right: 240px;
 }
+/* Return button container */
 #returnbuttondiv{
     height: 50px;
     width: 140px;
@@ -73,11 +83,13 @@ body{
     margin-right: 50px;
     text-align: center;
 }
+/* Return button */
 #returnbutton{
     border: black 1px solid;
     border-radius: 20%;
     background-color: lightgray;
 }
+/* Group name container */
 #groupname{
     height:100px;
     width:200px;
@@ -88,11 +100,23 @@ body{
     justify-content: center;
     text-align: center;
 }
+/* Group name input */
 #groupnametext{
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
 }
+
+/* Main container + content styling
+-----------------------------------*/
+
+
+/* main container */
+#mainpage_maincontainer{
+    height: 100%;
+    background-color: white;
+}
+/* To do columns, created by JS */
 #to_do_column{
     display: flex;
     flex-direction: column;
@@ -100,10 +124,7 @@ body{
     background-color: white;
     margin-top: 40px;
 }
-#mainpage_maincontainer{
-    height: 100%;
-    background-color: white;
-}
+/* Button to create new row */
 #mainpage_button1{
     height: 50px;
     width: 200px;
@@ -111,10 +132,12 @@ body{
     margin-top: 40px;
     font-weight: bold;
 }
+/* Button hover */
 #mainpage_button1:hover{
     box-shadow: 0 1px 1px 0 rgb(0,0,0), 0 1px 1px 0 rgb(0,0,0);
     cursor: pointer;
 }
+/* Row created by button, styling and positioning */
 .newboxclass {
     min-width: 800px;
     background-color: lightgray;
@@ -211,6 +234,9 @@ body{
     width:300px;
     border: black 1px solid;
 }
+
+/* Navigation bar
+------------------*/
 ul{
     position: absolute;
     width: 15%;
