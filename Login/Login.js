@@ -1,7 +1,7 @@
 // Demo login info
 function myFunction(){
-    var ID1 = "brukernavn";
-    var PW1 = "passord123";
+    var ID1 = "username";
+    var PW1 = "password";
     var GG = "Proceed";
     var BG = "Login Unsuccessful";
 var userIdInput = document.getElementById("username").value;
