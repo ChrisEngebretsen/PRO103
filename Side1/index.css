@@ -18,9 +18,9 @@ body{
 
 /*main container*/
 #container-getstarted{
-  top:-10px;
-  height: 65%;
-  width: 40%; 
+  top: 13px;
+  height: 66%;
+  width: 44%;
   border: 3px solid white;
   border-radius: 5%;
   position: relative;
@@ -31,7 +31,7 @@ body{
   min-width: 350px;
   position:absolute;
   left:580px;
-  margin-top: 200px;
+  margin-top: 150px;
   
 }
 /*container for dotted logoen*/
@@ -41,21 +41,22 @@ body{
 /*plassering og størrelse til containeren logoen ligger i*/
 #task_logo{
   left:410px;
-  width: 400px;
+  width: 300px;
   position: absolute;
-  top: -160px;
-  left: 30px;
+  top: -120px;
+  left: 35px;
+  border-radius: 7px;
 
 }
 /*plassering og størrelse på header 1*/
 #header1{
-    font-size: 45px;
+    font-size: 57px;
     margin-top: 100px;
     font-weight: bolder;
 }
 /*plassering og størrelse på header 2*/
 #header2{
-  font-size: 30px;
+  font-size: 39px;
   margin-top: 10px;
 
 }
@@ -74,7 +75,8 @@ body{
 
 /*Stilsetting/ størrelse / plassering av "Button-GetStartd"*/
 #button_getStarted{
-  width: 70%;
+  width: 85%;
+  height:30%;
   background-color: rgb(252, 145, 78);
   border: solid;
   color: black;
@@ -85,8 +87,8 @@ body{
   font-size: 50px;
   margin: 4px 2px;
   cursor: pointer;
-  margin-top: 200px;
-  border-radius: 110px; 
+  margin-top: 100px;
+  border-radius: 110px;
 }
 /*størrelse/plassering/farge på "Login" knappen øverst til høyre*/
 #login_getstarted{
