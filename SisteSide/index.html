@@ -23,7 +23,7 @@
             </li>
             <li>
                 <a href="#">
-                    <div class="icon">
+                    <div class="icon" data-toggle="modal" data-target="#Filter">
                         <i class="fa fa-filter" aria-hidden="true"></i>
                         <i class="fa fa-filter" aria-hidden="true"></i>
                     </div>
@@ -87,6 +87,37 @@
                 </div>
             </div>
         </div>
+
+        <div class="modal fade" id="Filter" tabindex="-1" role="dialog" aria-labelledby="Filter" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="account_text">Filter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <input type="checkbox" name="vehicle1" value="Bike"> High priority<br>
+                                    <input type="checkbox" name="vehicle1" value="Bike"> Medium priority<br>
+                                    <input type="checkbox" name="vehicle1" value="Bike"> Low priority<br>
+                                </div>
+                                <div class="form-group">
+                                    <label for="message-text" class="col-form-label">Keyword(s):</label>
+                                    <input type="text" class="form-control">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Apply</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         <div class="modal fade" id="Account" tabindex="-1" role="dialog" aria-labelledby="Account" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
@@ -119,11 +150,12 @@
                 </div>
             </div>
         </div>
+        
         <div class="modal fade" id="Help" tabindex="-1" role="dialog" aria-labelledby="Help" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="help_text">Help</h5>
+                        <h5 class="modal-title" id="help_text">Help guide</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -131,14 +163,15 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="recipient-name" class="col-form-label">Hi, how can we help?</label>
-                                <textarea class="form-control" id="message-text"></textarea>
+                                <label for="recipient-name" class="col-form-label">Quick help guide on community expenses board:</label>
+                                <label for="recipient-name" class="col-form-label"> 1. If you want to remove one of the items from the chart</label>
+                                <label for="recipient-name" class="col-form-label"> 2. Click on the item icon above the chart</label>
+                                <label for="recipient-name" class="col-form-label"> 3. (PS! You can only have 6 items in the shoppinglist at the same time)</label>
                             </div>
                         </form>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Submit</button>
                     </div>
                 </div>
             </div>
@@ -200,7 +233,7 @@
                 <!-- scroll bar med flex, direction: column-->
                 <h3>Responsible:</h3>
                 <div id="box-1" class="boxclass">
-                    <p>Januar</p>
+                    <p>January</p>
                     <div id="janinit" class="initials hidden month"></div>
                         <select id="jan" onchange="ddChange('jan')" name="users">
                             <option value=""> Add responsible</option>
@@ -213,7 +246,7 @@
                         </select>  <!-- circle-->
                     </div>
                 <div id="box-2" >
-                    <p>Februar</p>
+                    <p>February</p>
                     <div id="febinit" class="initials hidden"></div>
                     <select id="feb" onchange="ddChange('feb')" name="users">
                         <option value=""> Add responsible </option>
@@ -226,7 +259,7 @@
                     </select>    <!-- circle-->
                 </div>
                 <div id="box-3">
-                    <p>Mars</p>
+                    <p>March</p>
                     <div id="marinit" class="initials hidden"></div>
                     <select id="mar" onchange="ddChange('mar')" name="users">
                         <option value=""> Add responsible</option>
@@ -252,7 +285,7 @@
                     </select>   <!-- circle-->
                 </div>
                 <div id="box-5">
-                    <p>Mai</p>
+                    <p>May</p>
                     <div id="maiinit" class="initials hidden"></div>
                     <select id="mai" onchange="ddChange('mai')" name="users">
                         <option value="">Add responsible</option>
@@ -265,7 +298,7 @@
                     </select>   <!-- circle-->
                 </div>
                 <div id="box-6">
-                    <p>Juni</p>
+                    <p>June</p>
                     <div id="juninit" class="initials hidden"></div>
                     <select id="jun" onchange="ddChange('jun')" name="users">
                         <option value=""> Add responsible </option>
@@ -278,7 +311,7 @@
                     </select>    <!-- circle-->
                 </div>
                 <div id="box-7">
-                    <p>Juli</p>
+                    <p>July</p>
                     <div id="julinit" class="initials hidden"></div>
                     <select id="jul" onchange="ddChange('jul')" name="users">
                         <option value=""> Add responsible </option>
@@ -317,7 +350,7 @@
                     </select>   <!-- circle-->
                 </div>
                 <div id="box-10">
-                    <p>Oktober</p>
+                    <p>October</p>
                     <div id="oktinit" class="initals hidden"></div>
                     <select id="okt" onchange="ddChange('okt')" name="users">
                         <option value=""> Add responsible </option>
@@ -343,7 +376,7 @@
                     </select>   <!-- circle-->
                 </div>
                 <div id="box-12">
-                    <p>Desember</p>
+                    <p>December</p>
                     <div id="desinit" class="initals hidden"></div>
                     <select id="des" onchange="ddChange('des')" name="users">
                         <option value=""> Add responsible </option>

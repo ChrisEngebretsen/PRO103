@@ -26,6 +26,9 @@ body, button, html, input, select, textarea {
   background-color: lightgray;
   width: 34px;
   height: 34px;
+  margin-top: 120px;
+  position: absolute;
+  right: 90px;
 }
 /* Column */
 .list {
@@ -150,13 +153,13 @@ body, button, html, input, select, textarea {
   height:100%;
   background-color: rgb(253,188,132);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 /* Task logo */
 #tasklogo_mp{
   height: 70%;
   margin-top: 27px;
-  margin-right: 240px;
+  margin-right: 0;
 }
 /* Container for main */
 #container-main {
@@ -226,7 +229,7 @@ body, button, html, input, select, textarea {
   -ms-flex-direction: row;
   flex-direction: row;
   margin-bottom: 10px;
-  padding-bottom: 1 0px;
+  padding-bottom: 10px;
   margin-left: 250px;
 }
 /* Ul */
@@ -234,7 +237,7 @@ ul{
   position: absolute;
   width: 15%;
   height: 100%;
-  top: 75%;
+  top: 80%;
   left: 5%;
   transform: translate(-50%,-50%);
   background: #fff;

@@ -69,7 +69,9 @@ function addItems(){
     nameInput.setAttribute("type", "text");
     priceInput.setAttribute("type", "number");
     priceInput.setAttribute("placeholder", "Price in NOK");
-    nameInput.setAttribute("placeholder", "Item name")
+    nameInput.setAttribute("placeholder", "Item name");
+    nameInput.setAttribute("class", "nameinput");
+    priceInput.setAttribute("class", "priceinput");
     newItem.append(priceInput, nameInput);
     document.getElementById("itemDiv" + counter).appendChild(newItem);
 

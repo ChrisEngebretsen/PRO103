@@ -11,17 +11,22 @@
         <div id="side2_main">
             <div id="side2_leftSide" class="side2_side">
                 <div id="side2_wrap">
+                    <!--header 1-->
                     <h1 id="side2_header1" class="side2_header"> Welcome to Task.com </h1>
-                    <h2 id="side2_header2" class="side2_header">Now, tell us a bit about yourself..... </h2>
+                    <!-- header 2-->
+                    <h2 id="side2_header2" class="side2_header">Now, tell us a bit about yourself... </h2>
                     <div class="side2_loginpage">
+                        <!-- register form -->
                         <div class="form">
                             <form class="register-form">
                                 <input type="text" placeholder=" Fullname">
                                 <input type="text" placeholder="New password">
                                 <input type="text" placeholder="Phone number">
                                 <input type="text" placeholder="Email">
-                                <button><strong> Next </strong></button>
-                                <p class="side2_message">Already Registered? <a href="#">Sign in </a></p>
+                                <input type="button" id="button_next" value="NEXT" onclick="window.location.href='../Board_selection/board_selection.html';">
+                                <!-- <button><strong> Next </strong></button> -->
+                                <!-- har allerede en bruker? tar deg med til login siden -->
+                                <p class="side2_message">Already Registered? <a href="../Login/Login.html">Sign in </a></p>
                             </form>
                         </div>
                     </div>
